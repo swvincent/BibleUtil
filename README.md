@@ -1,3 +1,5 @@
+This is experimental. Get the original here: https://github.com/D-Haven/BibleUtilities
+
 # Bible Utilities
 
 Bible Utilities currently has tools to scan free text for scripture references, and to consolidate the list of references it finds
