@@ -25,7 +25,6 @@ namespace BibleUtilities
     {
         private static int numCreated;
         private readonly string bookResourceName;
-        private readonly int order;
 
         /// <summary>
         ///     Create the book internally.
@@ -35,12 +34,17 @@ namespace BibleUtilities
         /// <param name="culture">the current culture used for the books</param>
         internal Book(string book, int chapters, CultureInfo culture)
         {
-            order = numCreated;
+            Order = numCreated;
             bookResourceName = book;
             ChapterCount = chapters;
             Culture = culture;
             numCreated++;
         }
+
+        /// <summary>
+        /// Book order
+        /// </summary>
+        public int Order { get; private set; }
 
         /// <summary>
         ///     The current culture for this book.  Controls how it retrieves the resources.
@@ -79,7 +83,7 @@ namespace BibleUtilities
         /// <returns>0 if equal or greater or less than depending on order</returns>
         public int CompareTo(Book other)
         {
-            return order.CompareTo(other.order);
+            return Order.CompareTo(other.Order);
         }
 
         public bool Equals(Book other)
