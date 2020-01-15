@@ -1,18 +1,11 @@
-This is experimental. Get the original here: https://github.com/D-Haven/BibleUtilities
+# Bible Util
 
-# Bible Utilities
+BibleUtil is a fork of [D-Haven/BibleUtilities](https://github.com/D-Haven/BibleUtilities) that I'm modifying to meet my specific needs. It's a work in progress. You should use the original project instead.
 
-Bible Utilities currently has tools to scan free text for scripture references, and to consolidate the list of references it finds
-to the smallest set.
+Completed changes:
+* Make book order public, so it can be used as an ID field
+* Removed Norwegian language support. It would be difficult for me to support with the changes I plan to make.
 
-[![Join the chat at https://gitter.im/BibleUtilities/Lobby](https://badges.gitter.im/BibleUtilities/Lobby.svg)](https://gitter.im/BibleUtilities/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build status](https://ci.appveyor.com/api/projects/status/m6vkhcv9i74gdmm5/branch/master?svg=true)](https://ci.appveyor.com/project/bloritsch/bibleutilities/branch/master)
-
-* **NetCore 1.1** -- You can use it in just about any kind of project (store apps, standard apps, silverlight, Xamarin, etc.)
-* **I18n Savvy** -- Currently support for English ("en") and Norwegian ("nb"), submissions for more languages welcome
-* **Simple API** -- Patterned after C# libraries for ToString() and TryParse() variations, and it's easy to specify the language you want.
-* **Multilingual App Toolkit** -- Uses [Microsoft's toolkit](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit) to create the translations.
-
-The goal of this small set of utilities is to simplify working with Bible references, parsing, etc.  We aren't going to include the actual
-Bible content, but we'll make it easier to build apps around it.  If you have suggestions or need to report bugs, please use the Issues feature
-on GitHub for this project.
+Planned changes:
+* Streamline abbreviations, and add more
+* Add apocryphal/deuterocanonical books
