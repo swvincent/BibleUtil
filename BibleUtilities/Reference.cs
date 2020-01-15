@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace DHaven.BibleUtilities
+namespace BibleUtilities
 {
     /// <summary>
     /// Represents one scripture reference.  Assumes all verses are in the same chapter.

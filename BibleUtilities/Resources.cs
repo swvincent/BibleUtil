@@ -1,18 +1,18 @@
 ﻿using System.Reflection;
 using System.Resources;
 
-namespace DHaven.BibleUtilities
+namespace BibleUtilities
 {
-    internal static class Resources
+    internal static class ResourceManagement
     {
-        static Resources()
+        static ResourceManagement()
         {
-            var assembly = typeof(Resources).GetTypeInfo().Assembly;
-            Books = new ResourceManager("DHaven.BibleUtilities.Resources.Books", assembly);
-            CommonMistakes = new ResourceManager("DHaven.BibleUtilities.Resources.CommonMistakes", assembly);
-            StandardAbbreviations = new ResourceManager("DHaven.BibleUtilities.Resources.StandardAbbreviations",
+            var assembly = typeof(ResourceManagement).GetTypeInfo().Assembly;
+            Books = new ResourceManager("BibleUtilities.Resources.Books", assembly);
+            CommonMistakes = new ResourceManager("BibleUtilities.Resources.CommonMistakes", assembly);
+            StandardAbbreviations = new ResourceManager("BibleUtilities.Resources.StandardAbbreviations",
                 assembly);
-            ThompsonAbbreviations = new ResourceManager("DHaven.BibleUtilities.Resources.ThompsonAbbreviations",
+            ThompsonAbbreviations = new ResourceManager("BibleUtilities.Resources.ThompsonAbbreviations",
                 assembly);
         }
 

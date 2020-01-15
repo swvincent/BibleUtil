@@ -13,8 +13,8 @@
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>bible parsing internationalized netcore</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
-    <RootNamespace>DHaven.BibleUtilities</RootNamespace>
-    <AssemblyName>DHaven.BibleUtilities</AssemblyName>
+    <RootNamespace>BibleUtilities</RootNamespace>
+    <AssemblyName>BibleUtilities</AssemblyName>
     <ApplicationIcon />
     <Win32Resource />
     <PackageReleaseNotes>Multi-target to make it usable in as many projects as possible</PackageReleaseNotes>
@@ -23,6 +23,29 @@
 
   <ItemGroup>
     <PackageReference Include="system.resources.resourcemanager" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Books.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Books.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\CommonMistakes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CommonMistakes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\StandardAbbreviations.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StandardAbbreviations.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ThompsonAbbreviations.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ThompsonAbbreviations.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

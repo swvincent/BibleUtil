@@ -19,7 +19,7 @@ using System;
 using System.Globalization;
 using System.Linq;
 
-namespace DHaven.BibleUtilities
+namespace BibleUtilities
 {
     public class Book : IFormattable, IComparable<Book>, IEquatable<Book>
     {
@@ -50,20 +50,20 @@ namespace DHaven.BibleUtilities
         /// <summary>
         ///     The unabreviated name of the book.
         /// </summary>
-        public string Name => Resources.Books.GetString(bookResourceName, Culture);
+        public string Name => ResourceManagement.Books.GetString(bookResourceName, Culture);
 
         /// <summary>
         ///     Standard abbreviations as defined in "The Christian Writer's
         ///     Manual of Style", 2004 edition (ISBN: 9780310487715).
         /// </summary>
-        public string StandardAbreviation => Resources.StandardAbbreviations.GetString(bookResourceName, Culture);
+        public string StandardAbreviation => ResourceManagement.StandardAbbreviations.GetString(bookResourceName, Culture);
 
         /// <summary>
         ///     Thompson Chain references, pulled from the 5th edition.
         /// </summary>
-        public string ThompsonAbreviation => Resources.ThompsonAbbreviations.GetString(bookResourceName, Culture);
+        public string ThompsonAbreviation => ResourceManagement.ThompsonAbbreviations.GetString(bookResourceName, Culture);
 
-        public string CommonMistake => Resources.CommonMistakes.GetString(bookResourceName, Culture);
+        public string CommonMistake => ResourceManagement.CommonMistakes.GetString(bookResourceName, Culture);
 
         /// <summary>
         ///     The number of chapters in the book.
@@ -366,11 +366,11 @@ namespace DHaven.BibleUtilities
             // Break up on all remaining white space
             var parts = (str ?? "").Trim().Split(' ', '\r', '\n', '\t');
 
-            var first = Resources.Books.GetString("First", culture).ToLower();
-            var second = Resources.Books.GetString("Second", culture).ToLower();
-            var third = Resources.Books.GetString("Third", culture).ToLower();
-            var fourth = Resources.Books.GetString("Fourth", culture).ToLower();
-            var fifth = Resources.Books.GetString("Fifth", culture).ToLower();
+            var first = ResourceManagement.Books.GetString("First", culture).ToLower();
+            var second = ResourceManagement.Books.GetString("Second", culture).ToLower();
+            var third = ResourceManagement.Books.GetString("Third", culture).ToLower();
+            var fourth = ResourceManagement.Books.GetString("Fourth", culture).ToLower();
+            var fifth = ResourceManagement.Books.GetString("Fifth", culture).ToLower();
 
             // If the first part is a roman numeral, or spelled ordinal, convert it to arabic
             var number = parts[0].ToLower();

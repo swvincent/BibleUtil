@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace DHaven.BibleUtilities.Test
+namespace BibleUtilities.Test
 {
     public class GivenSetOfReferences
     {
         [Fact]
         public void IdenticalReferencesShouldBecomeOne()
         {
-            var source = new [] { "1 John 3:2", "1 Jn 3:2" };
+            var source = new[] { "1 John 3:2", "1 Jn 3:2" };
             var reduced = source.ReduceScriptures();
 
             Assert.Equal(1, reduced.Count);

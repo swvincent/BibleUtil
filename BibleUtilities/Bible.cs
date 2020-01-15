@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace DHaven.BibleUtilities
+namespace BibleUtilities
 {
     /// <summary>
     ///     Provide a convenience class to get the already translated books
