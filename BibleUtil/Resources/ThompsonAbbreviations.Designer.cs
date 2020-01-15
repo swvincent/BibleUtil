@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BibleUtilities.Resources {
+namespace BibleUtil.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace BibleUtilities.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class StandardAbbreviations {
+    internal class ThompsonAbbreviations {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal StandardAbbreviations() {
+        internal ThompsonAbbreviations() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace BibleUtilities.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BibleUtilities.Resources.StandardAbbreviations", typeof(StandardAbbreviations).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BibleUtil.Resources.ThompsonAbbreviations", typeof(ThompsonAbbreviations).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Acts.
+        ///   Looks up a localized string similar to Ac.
         /// </summary>
         internal static string Acts {
             get {
@@ -70,7 +70,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Amos.
+        ///   Looks up a localized string similar to Am.
         /// </summary>
         internal static string Amos {
             get {
@@ -79,7 +79,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Col..
+        ///   Looks up a localized string similar to Col.
         /// </summary>
         internal static string Colossians {
             get {
@@ -88,7 +88,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dan..
+        ///   Looks up a localized string similar to Da.
         /// </summary>
         internal static string Daniel {
             get {
@@ -97,7 +97,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deut..
+        ///   Looks up a localized string similar to De.
         /// </summary>
         internal static string Deuteronomy {
             get {
@@ -106,7 +106,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eccl..
+        ///   Looks up a localized string similar to Ec.
         /// </summary>
         internal static string Ecclesiastes {
             get {
@@ -115,7 +115,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eph..
+        ///   Looks up a localized string similar to Ep.
         /// </summary>
         internal static string Ephesians {
             get {
@@ -124,7 +124,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Est..
+        ///   Looks up a localized string similar to Est.
         /// </summary>
         internal static string Esther {
             get {
@@ -133,7 +133,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ex..
+        ///   Looks up a localized string similar to Ex.
         /// </summary>
         internal static string Exodus {
             get {
@@ -142,7 +142,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ezek..
+        ///   Looks up a localized string similar to Ez.
         /// </summary>
         internal static string Ezekiel {
             get {
@@ -151,7 +151,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ezra.
+        ///   Looks up a localized string similar to Ezr.
         /// </summary>
         internal static string Ezra {
             get {
@@ -160,7 +160,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gal..
+        ///   Looks up a localized string similar to Ga.
         /// </summary>
         internal static string Galatians {
             get {
@@ -169,7 +169,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gen..
+        ///   Looks up a localized string similar to Ge.
         /// </summary>
         internal static string Genesis {
             get {
@@ -178,7 +178,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hab..
+        ///   Looks up a localized string similar to Hab.
         /// </summary>
         internal static string Habakkuk {
             get {
@@ -187,7 +187,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hag..
+        ///   Looks up a localized string similar to Hag.
         /// </summary>
         internal static string Haggai {
             get {
@@ -196,7 +196,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Heb..
+        ///   Looks up a localized string similar to He.
         /// </summary>
         internal static string Hebrews {
             get {
@@ -205,7 +205,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hos..
+        ///   Looks up a localized string similar to Ho.
         /// </summary>
         internal static string Hosea {
             get {
@@ -214,7 +214,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Isa..
+        ///   Looks up a localized string similar to Is.
         /// </summary>
         internal static string Isaiah {
             get {
@@ -223,7 +223,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to James.
+        ///   Looks up a localized string similar to Ja.
         /// </summary>
         internal static string James {
             get {
@@ -232,7 +232,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jer..
+        ///   Looks up a localized string similar to Je.
         /// </summary>
         internal static string Jeremiah {
             get {
@@ -241,7 +241,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Job.
+        ///   Looks up a localized string similar to Jb.
         /// </summary>
         internal static string Job {
             get {
@@ -259,7 +259,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to John.
+        ///   Looks up a localized string similar to Jn.
         /// </summary>
         internal static string John {
             get {
@@ -268,7 +268,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jonah.
+        ///   Looks up a localized string similar to Jona.
         /// </summary>
         internal static string Jonah {
             get {
@@ -277,7 +277,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Josh..
+        ///   Looks up a localized string similar to Jos.
         /// </summary>
         internal static string Joshua {
             get {
@@ -295,7 +295,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Judg..
+        ///   Looks up a localized string similar to Jud.
         /// </summary>
         internal static string Judges {
             get {
@@ -304,7 +304,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lam..
+        ///   Looks up a localized string similar to Lam.
         /// </summary>
         internal static string Lamentations {
             get {
@@ -313,7 +313,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lev..
+        ///   Looks up a localized string similar to Le.
         /// </summary>
         internal static string Leviticus {
             get {
@@ -322,7 +322,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Luke.
+        ///   Looks up a localized string similar to Lu.
         /// </summary>
         internal static string Luke {
             get {
@@ -331,7 +331,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mal..
+        ///   Looks up a localized string similar to Mal.
         /// </summary>
         internal static string Malachai {
             get {
@@ -340,7 +340,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mark.
+        ///   Looks up a localized string similar to Mk.
         /// </summary>
         internal static string Mark {
             get {
@@ -349,7 +349,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Matt..
+        ///   Looks up a localized string similar to Mt.
         /// </summary>
         internal static string Matthew {
             get {
@@ -358,7 +358,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mic..
+        ///   Looks up a localized string similar to Mi.
         /// </summary>
         internal static string Micah {
             get {
@@ -367,7 +367,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nah..
+        ///   Looks up a localized string similar to Na.
         /// </summary>
         internal static string Nahum {
             get {
@@ -376,7 +376,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Neh..
+        ///   Looks up a localized string similar to Ne.
         /// </summary>
         internal static string Nehemiah {
             get {
@@ -385,7 +385,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Num..
+        ///   Looks up a localized string similar to Nu.
         /// </summary>
         internal static string Numbers {
             get {
@@ -394,7 +394,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Obad..
+        ///   Looks up a localized string similar to Obad.
         /// </summary>
         internal static string Obadaiah {
             get {
@@ -403,7 +403,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Chron..
+        ///   Looks up a localized string similar to 1 Chr.
         /// </summary>
         internal static string OneChronicles {
             get {
@@ -412,7 +412,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Cor..
+        ///   Looks up a localized string similar to 1 Co.
         /// </summary>
         internal static string OneCorinthians {
             get {
@@ -421,7 +421,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 John.
+        ///   Looks up a localized string similar to 1 Jn.
         /// </summary>
         internal static string OneJohn {
             get {
@@ -430,7 +430,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Kings.
+        ///   Looks up a localized string similar to 1 K.
         /// </summary>
         internal static string OneKings {
             get {
@@ -439,7 +439,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Peter.
+        ///   Looks up a localized string similar to 1 Pe.
         /// </summary>
         internal static string OnePeter {
             get {
@@ -448,7 +448,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Sam..
+        ///   Looks up a localized string similar to 1 S.
         /// </summary>
         internal static string OneSamuel {
             get {
@@ -457,7 +457,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Thes..
+        ///   Looks up a localized string similar to 1 Th.
         /// </summary>
         internal static string OneThessalonians {
             get {
@@ -466,7 +466,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1 Tim..
+        ///   Looks up a localized string similar to 1 Ti.
         /// </summary>
         internal static string OneTimothy {
             get {
@@ -475,7 +475,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Philem..
+        ///   Looks up a localized string similar to Phm.
         /// </summary>
         internal static string Philemon {
             get {
@@ -484,7 +484,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Phil..
+        ///   Looks up a localized string similar to Ph.
         /// </summary>
         internal static string Philippians {
             get {
@@ -493,7 +493,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prov..
+        ///   Looks up a localized string similar to Pr.
         /// </summary>
         internal static string Proverbs {
             get {
@@ -502,7 +502,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ps..
+        ///   Looks up a localized string similar to Ps.
         /// </summary>
         internal static string Psalms {
             get {
@@ -511,7 +511,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rev..
+        ///   Looks up a localized string similar to Re.
         /// </summary>
         internal static string Revelation {
             get {
@@ -520,7 +520,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rom..
+        ///   Looks up a localized string similar to Ro.
         /// </summary>
         internal static string Romans {
             get {
@@ -529,7 +529,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ruth.
+        ///   Looks up a localized string similar to Ru.
         /// </summary>
         internal static string Ruth {
             get {
@@ -538,7 +538,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Song..
+        ///   Looks up a localized string similar to Song.
         /// </summary>
         internal static string SongOfSolomon {
             get {
@@ -547,7 +547,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3 John.
+        ///   Looks up a localized string similar to 3 Jn.
         /// </summary>
         internal static string ThreeJohn {
             get {
@@ -556,7 +556,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Titus.
+        ///   Looks up a localized string similar to Tit.
         /// </summary>
         internal static string Titus {
             get {
@@ -565,7 +565,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Chron..
+        ///   Looks up a localized string similar to 2 Chr.
         /// </summary>
         internal static string TwoChronicles {
             get {
@@ -574,7 +574,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Cor..
+        ///   Looks up a localized string similar to 2 Co.
         /// </summary>
         internal static string TwoCorinthians {
             get {
@@ -583,7 +583,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 John.
+        ///   Looks up a localized string similar to 2 Jn.
         /// </summary>
         internal static string TwoJohn {
             get {
@@ -592,7 +592,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Kings.
+        ///   Looks up a localized string similar to 2 K.
         /// </summary>
         internal static string TwoKings {
             get {
@@ -601,7 +601,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Peter.
+        ///   Looks up a localized string similar to 2 Pe.
         /// </summary>
         internal static string TwoPeter {
             get {
@@ -610,7 +610,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Sam..
+        ///   Looks up a localized string similar to 2 S.
         /// </summary>
         internal static string TwoSamuel {
             get {
@@ -619,7 +619,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Thes..
+        ///   Looks up a localized string similar to 2 Th.
         /// </summary>
         internal static string TwoThessalonians {
             get {
@@ -628,7 +628,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Tim..
+        ///   Looks up a localized string similar to 2 Ti.
         /// </summary>
         internal static string TwoTimothy {
             get {
@@ -637,7 +637,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zech..
+        ///   Looks up a localized string similar to Zec.
         /// </summary>
         internal static string Zechariah {
             get {
@@ -646,7 +646,7 @@ namespace BibleUtilities.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zeph..
+        ///   Looks up a localized string similar to Zep.
         /// </summary>
         internal static string Zephaniah {
             get {

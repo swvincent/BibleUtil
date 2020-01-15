@@ -2,8 +2,8 @@
 
   <PropertyGroup>    
     <TargetFramework>netcoreapp2.0</TargetFramework>    
-    <AssemblyName>BibleUtilities.Test</AssemblyName>    
-    <RootNamespace>BibleUtilities.Test</RootNamespace>
+    <AssemblyName>BibleUtil.Test</AssemblyName>    
+    <RootNamespace>BibleUtil.Test</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BibleUtilities\BibleUtilities.csproj" />
+    <ProjectReference Include="..\BibleUtil\BibleUtil.csproj" />
   </ItemGroup>
 
   <ItemGroup>

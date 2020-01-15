@@ -7,14 +7,14 @@
     <Company>DHaven.org</Company>
     <Description>A set of utilities to make it easy to find all Bible references in plain text.  The parser can recognize abbreviations and a number of common spelling mistakes, and even those can be translated.  It is designed around the Protestant cannon.</Description>
     <Copyright>Copyright 2016 by DHaven.org</Copyright>
-    <PackageProjectUrl>https://github.com/bloritsch/BibleUtilities</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/bloritsch/BibleUtilities/blob/master/LICENSE.txt</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/bloritsch/BibleUtilities</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/bloritsch/BibleUtil</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/bloritsch/BibleUtil/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/bloritsch/BibleUtil</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>bible parsing internationalized netcore</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
-    <RootNamespace>BibleUtilities</RootNamespace>
-    <AssemblyName>BibleUtilities</AssemblyName>
+    <RootNamespace>BibleUtil</RootNamespace>
+    <AssemblyName>BibleUtil</AssemblyName>
     <ApplicationIcon />
     <Win32Resource />
     <PackageReleaseNotes>Multi-target to make it usable in as many projects as possible</PackageReleaseNotes>

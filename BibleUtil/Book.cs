@@ -19,7 +19,7 @@ using System;
 using System.Globalization;
 using System.Linq;
 
-namespace BibleUtilities
+namespace BibleUtil
 {
     public class Book : IFormattable, IComparable<Book>, IEquatable<Book>
     {

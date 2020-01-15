@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using Xunit;
 
-namespace BibleUtilities.Test
+namespace BibleUtil.Test
 {
     public class GivenReference
     {

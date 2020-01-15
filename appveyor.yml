@@ -27,7 +27,7 @@ build_script:
     dotnet build
 test_script:
 - cmd: >-
-    cd BibleUtilities.Test
+    cd BibleUtil.Test
 
     dotnet test
 artifacts:

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace BibleUtilities.Test
+namespace BibleUtil.Test
 {
     public class GivenSetOfReferences
     {

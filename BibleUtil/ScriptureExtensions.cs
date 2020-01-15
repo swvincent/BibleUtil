@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace BibleUtilities
+namespace BibleUtil
 {
     /// <summary>
     ///     Extension methods to consolidate a list of scripture references to the

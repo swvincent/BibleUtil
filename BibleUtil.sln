@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleUtilities", "BibleUtilities\BibleUtilities.csproj", "{D98F48F6-3330-4841-AD43-8B547277A6F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibleUtil", "BibleUtil\BibleUtil.csproj", "{D98F48F6-3330-4841-AD43-8B547277A6F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleUtilities.Test", "BibleUtilities.Test\BibleUtilities.Test.csproj", "{1C8D4D97-6CB6-46E2-9C9E-5D6EFE9BE27D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibleUtil.Test", "BibleUtil.Test\BibleUtil.Test.csproj", "{1C8D4D97-6CB6-46E2-9C9E-5D6EFE9BE27D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBDA1CAE-3FBC-4520-836C-F0E2785FDDC8}"
 	ProjectSection(SolutionItems) = preProject
@@ -29,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5721D660-224C-47E5-94F5-4A478FF245ED}
 	EndGlobalSection
 EndGlobal
