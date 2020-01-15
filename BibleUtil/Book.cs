@@ -42,7 +42,7 @@ namespace BibleUtil
         }
 
         /// <summary>
-        /// Book order
+        /// Book number (order)
         /// </summary>
         public int BookNumber { get; private set; }
 
