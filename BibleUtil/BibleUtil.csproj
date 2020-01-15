@@ -3,22 +3,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>Berin Loritsch</Authors>
-    <Company>DHaven.org</Company>
+    <Authors>Berin Loritsch, Scott W. Vincent</Authors>
+    <Company></Company>
     <Description>A set of utilities to make it easy to find all Bible references in plain text.  The parser can recognize abbreviations and a number of common spelling mistakes, and even those can be translated.  It is designed around the Protestant cannon.</Description>
-    <Copyright>Copyright 2016 by DHaven.org</Copyright>
-    <PackageProjectUrl>https://github.com/bloritsch/BibleUtil</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/bloritsch/BibleUtil/blob/master/LICENSE.txt</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/bloritsch/BibleUtil</RepositoryUrl>
+    <Copyright>Copyright 2016 by DHaven.org, Copyright 2020 by Scott W. Vincent</Copyright>
+    <PackageProjectUrl>https://github.com/svincent/BibleUtil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/svincent/BibleUtil</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>bible parsing internationalized netcore</PackageTags>
+    <PackageTags>bible parsing</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <RootNamespace>BibleUtil</RootNamespace>
     <AssemblyName>BibleUtil</AssemblyName>
     <ApplicationIcon />
     <Win32Resource />
-    <PackageReleaseNotes>Multi-target to make it usable in as many projects as possible</PackageReleaseNotes>
-    <Version>1.0.2</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Version>0.1.1</Version>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -65,6 +65,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ThompsonAbbreviations.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
