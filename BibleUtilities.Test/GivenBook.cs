@@ -8,7 +8,6 @@ namespace DHaven.BibleUtilities.Test
     public class GivenBook
     {
         private readonly Bible englishBible = new Bible(new CultureInfo("en"));
-        private readonly Bible norwegianBible = new Bible(new CultureInfo("nb"));
 
         [Theory]
         [InlineData("T")]
@@ -18,35 +17,35 @@ namespace DHaven.BibleUtilities.Test
         [InlineData("n")]
         public void ShouldParseAllToStringVariants(string format)
         {
-            foreach (var book in englishBible.AllBooks.Union(norwegianBible.AllBooks))
+            foreach (var book in englishBible.AllBooks)
                 Assert.Equal(book, Book.Parse(book.ToString(format)));
         }
 
         [Fact]
         public void ShouldFormatAsFullName()
         {
-            foreach (var book in englishBible.AllBooks.Union(norwegianBible.AllBooks))
+            foreach (var book in englishBible.AllBooks)
                 Assert.Equal(book.Name, book.ToString("N"));
         }
 
         [Fact]
         public void ShouldFormatAsStandardAbbreviations()
         {
-            foreach (var book in englishBible.AllBooks.Union(norwegianBible.AllBooks))
+            foreach (var book in englishBible.AllBooks)
                 Assert.Equal(book.StandardAbreviation, book.ToString("S"));
         }
 
         [Fact]
         public void ShouldFormatAsThompsonChainAbbreviation()
         {
-            foreach (var book in englishBible.AllBooks.Union(norwegianBible.AllBooks))
+            foreach (var book in englishBible.AllBooks)
                 Assert.Equal(book.ThompsonAbreviation, book.ToString("T"));
         }
 
         [Fact]
         public void ShouldParseResultsOfToString()
         {
-            foreach (var book in englishBible.AllBooks.Union(norwegianBible.AllBooks))
+            foreach (var book in englishBible.AllBooks)
             {
                 var stringForm = book.ToString();
 

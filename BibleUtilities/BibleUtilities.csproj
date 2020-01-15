@@ -26,29 +26,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Books.nb.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Books.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Books.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\CommonMistakes.nb.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\CommonMistakes.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonMistakes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\StandardAbbreviations.nb.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Resources\StandardAbbreviations.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>StandardAbbreviations.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\ThompsonAbbreviations.nb.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\ThompsonAbbreviations.resx">
       <Generator>ResXFileCodeGenerator</Generator>
