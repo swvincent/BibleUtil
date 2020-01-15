@@ -34,7 +34,7 @@ namespace BibleUtil
         /// <param name="culture">the current culture used for the books</param>
         internal Book(string book, int chapters, CultureInfo culture)
         {
-            Order = numCreated;
+            BookNumber = numCreated;
             bookResourceName = book;
             ChapterCount = chapters;
             Culture = culture;
@@ -44,7 +44,7 @@ namespace BibleUtil
         /// <summary>
         /// Book order
         /// </summary>
-        public int Order { get; private set; }
+        public int BookNumber { get; private set; }
 
         /// <summary>
         ///     The current culture for this book.  Controls how it retrieves the resources.
@@ -83,7 +83,7 @@ namespace BibleUtil
         /// <returns>0 if equal or greater or less than depending on order</returns>
         public int CompareTo(Book other)
         {
-            return Order.CompareTo(other.Order);
+            return BookNumber.CompareTo(other.BookNumber);
         }
 
         public bool Equals(Book other)
