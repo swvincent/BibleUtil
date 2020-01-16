@@ -35,6 +35,28 @@ namespace BibleUtil
 
         public int[] Verses { get; set; }
 
+        /// <summary>
+        /// If verses exist, return true if they are contiguous; false otherwise.
+        /// </summary>
+        /// <remarks>
+        /// Based on https://stackoverflow.com/a/2475822. "Good enough" for the task at hand.
+        /// </remarks>
+        public bool ContiguousVerses
+        {
+            get
+            {
+                if (Verses.Any())
+                {
+                    var missingVerses = Enumerable.Range(Verses.Min(), Verses.Max())
+                        .Except(Verses);
+
+                    return missingVerses.Any();
+                }
+                else
+                    return false;
+            }
+        }
+
         public int CompareTo(Reference other)
         {
             int compare = Book.CompareTo(other.Book);
