@@ -1,4 +1,4 @@
-﻿#region Copyright 2016 D-Haven.org
+﻿#region Copyright 2016 D-Haven.org, Copyright 2020 Scott W. Vincent
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -41,20 +41,17 @@ namespace BibleUtil
         /// <remarks>
         /// Based on https://stackoverflow.com/a/2475822. "Good enough" for the task at hand.
         /// </remarks>
-        public bool ContiguousVerses
+        public bool ContiguousVerses()
         {
-            get
+            if (Verses.Any())
             {
-                if (Verses.Any())
-                {
-                    var missingVerses = Enumerable.Range(Verses.Min(), Verses.Max())
-                        .Except(Verses);
+                var missingVerses = Enumerable.Range(Verses.Min(), Verses.Max())
+                    .Except(Verses);
 
-                    return missingVerses.Any();
-                }
-                else
-                    return false;
+                return !missingVerses.Any();
             }
+            else
+                return false;
         }
 
         public int CompareTo(Reference other)

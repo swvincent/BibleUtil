@@ -108,6 +108,26 @@ namespace BibleUtil.Test
         }
 
         [Fact]
+        public void ShouldIndicateContiguousVerses()
+        {
+            const string text = "1 John 1:1-5";
+
+            var reference = Reference.Parse(text, new CultureInfo("en"));
+
+            Assert.True(reference.ContiguousVerses());
+        }
+
+        [Fact]
+        public void ShouldNotIndicateContiguousVerses()
+        {
+            const string text = "1 John 1:1,5";
+
+            var reference = Reference.Parse(text, new CultureInfo("en"));
+
+            Assert.False(reference.ContiguousVerses());
+        }
+
+        [Fact]
         public void ShouldScanForVersesInsideParenthesis()
         {
             var references = Reference.Scan("This is random text with a reference (1 Co 13:3)");

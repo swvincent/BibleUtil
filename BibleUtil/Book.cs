@@ -1,4 +1,4 @@
-﻿#region Copyright 2016 D-Haven.org
+﻿#region Copyright 2016 D-Haven.org, Copyright 2020 Scott W. Vincent
 
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
