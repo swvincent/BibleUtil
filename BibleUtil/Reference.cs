@@ -304,8 +304,24 @@ namespace BibleUtil
 
                 if (chapter == text.Length)
                 {
-                    errorString = "There are no chapter or verses, can't be a reference.";
-                    return null;
+                    // No chapters or verses, check if it's a book only reference.
+                    // This is a bit of a hack if I'm honest, but it works. -SWV
+                    if (!Book.TryParse(text.Substring(0, chapter), culture, out Book b))
+                    {
+                        errorString = "There is no book, can't be a reference.";
+                        return null;
+                    }
+                    else
+                    {
+                        Reference r = new Reference
+                        {
+                            Book = b,
+                            Chapter = 0,
+                            Verses = new int[0]
+                        };
+
+                        return r;
+                    }
                 }
 
                 verseSection = text.Substring(chapter);
@@ -455,15 +471,18 @@ namespace BibleUtil
         {
             StringBuilder builder = new StringBuilder(Book.ToString(format, formatProvider));
 
-            builder.Append(" ");
-
-            if (Book.ChapterCount > 1)
+            if (Chapter > 0)
             {
-                builder.Append(Chapter);
+                builder.Append(" ");
 
-                if (Verses != null && Verses.Length > 0)
+                if (Book.ChapterCount > 1)
                 {
-                    builder.Append(":");
+                    builder.Append(Chapter);
+
+                    if (Verses != null && Verses.Length > 0)
+                    {
+                        builder.Append(":");
+                    }
                 }
             }
 

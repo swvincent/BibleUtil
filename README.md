@@ -4,6 +4,7 @@ BibleUtil is a fork of [D-Haven/BibleUtilities](https://github.com/D-Haven/Bible
 
 Completed changes:
 * Make book number (order) public, so it can be used as an ID field
+* Allow book only references. Chapter is 0 if none specified.
 * Add ContiguousVerses property to Reference
 * Removed Norwegian language support as I'm unable to support it with the changes I plan to make.
 

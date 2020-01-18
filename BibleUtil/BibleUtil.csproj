@@ -17,7 +17,7 @@
     <ApplicationIcon />
     <Win32Resource />
     <PackageReleaseNotes></PackageReleaseNotes>
-    <Version>1.0.1</Version>
+    <Version>1.1</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 

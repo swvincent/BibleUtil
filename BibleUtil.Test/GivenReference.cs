@@ -128,6 +128,19 @@ namespace BibleUtil.Test
         }
 
         [Fact]
+        public void ShouldParseBookOnlyReference()
+        {
+            const string text = "Acts";
+
+            var reference = Reference.Parse(text, new CultureInfo("en"));
+
+            Assert.Equal("Acts", reference.Book.ToString());
+            Assert.Equal(0, reference.Chapter);
+            Assert.Equal(0, reference.Verses.Length);
+            Assert.Equal("Acts", reference.ToString());
+        }
+
+        [Fact]
         public void ShouldScanForVersesInsideParenthesis()
         {
             var references = Reference.Scan("This is random text with a reference (1 Co 13:3)");
