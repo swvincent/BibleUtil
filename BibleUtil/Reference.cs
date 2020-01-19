@@ -43,15 +43,18 @@ namespace BibleUtil
         /// </remarks>
         public bool ContiguousVerses()
         {
-            if (Verses.Any())
+            if (Verses.Count() > 1)
             {
-                var missingVerses = Enumerable.Range(Verses.Min(), Verses.Max())
-                    .Except(Verses);
+                int firstVerse = Verses.Min();
+                var verseCount = Verses.Max() - Verses.Min() + 1;
+                var allVersesInRange = Enumerable.Range(firstVerse, verseCount);
+
+                var missingVerses = allVersesInRange.Except(Verses);
 
                 return !missingVerses.Any();
             }
             else
-                return false;
+                return true;
         }
 
         public int CompareTo(Reference other)

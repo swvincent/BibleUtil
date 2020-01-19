@@ -108,9 +108,29 @@ namespace BibleUtil.Test
         }
 
         [Fact]
-        public void ShouldIndicateContiguousVerses()
+        public void ShouldIndicateContiguousForOneVerse()
         {
-            const string text = "1 John 1:1-5";
+            const string text = "John 3:16";
+
+            var reference = Reference.Parse(text, new CultureInfo("en"));
+
+            Assert.True(reference.ContiguousVerses());
+        }
+
+        [Fact]
+        public void ShouldIndicateContiguousForTwoVerses()
+        {
+            const string text = "John 3:16-17";
+
+            var reference = Reference.Parse(text, new CultureInfo("en"));
+
+            Assert.True(reference.ContiguousVerses());
+        }
+
+        [Fact]
+        public void ShouldIndicateContiguousForFiveVerses()
+        {
+            const string text = "Genesis 1:1-5";
 
             var reference = Reference.Parse(text, new CultureInfo("en"));
 
