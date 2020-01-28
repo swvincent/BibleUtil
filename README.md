@@ -6,6 +6,7 @@ Completed changes:
 * Make book number (order) public, so it can be used as an ID field
 * Allow book only references. Chapter is 0 if none specified.
 * Add ContiguousVerses property to Reference
+* Set book numbers manually so they are the same across references and start at 1
 * Removed Norwegian language support as I'm unable to support it with the changes I plan to make.
 
 Planned changes:

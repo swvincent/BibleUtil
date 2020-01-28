@@ -23,28 +23,26 @@ namespace BibleUtil
 {
     public class Book : IFormattable, IComparable<Book>, IEquatable<Book>
     {
-        private static int numCreated;
         private readonly string bookResourceName;
 
         /// <summary>
         ///     Create the book internally.
         /// </summary>
-        /// <param name="book">the resource name for the book</param>
+        /// <param name="bookName">the resource name for the book</param>
         /// <param name="chapters">the number of chapters in that book</param>
         /// <param name="culture">the current culture used for the books</param>
-        internal Book(string book, int chapters, CultureInfo culture)
+        internal Book(int bookNumber, string bookName, int chapters, CultureInfo culture)
         {
-            BookNumber = numCreated;
-            bookResourceName = book;
+            BookNumber = bookNumber;
+            bookResourceName = bookName;
             ChapterCount = chapters;
             Culture = culture;
-            numCreated++;
         }
 
         /// <summary>
         /// Book number (order)
         /// </summary>
-        public int BookNumber { get; private set; }
+        public int BookNumber { get; }
 
         /// <summary>
         ///     The current culture for this book.  Controls how it retrieves the resources.
