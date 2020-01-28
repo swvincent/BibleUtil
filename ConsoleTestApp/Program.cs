@@ -20,6 +20,7 @@ namespace ConsoleTestApp
                 Console.WriteLine($"{verseRef2.Book.ToString()} is book # {verseRef2.Book.BookNumber}");
 
                 Console.WriteLine($"Verses contiguous: {verseRef2.ContiguousVerses()}");
+
             }
             catch (Exception caught)
             {

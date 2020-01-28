@@ -181,6 +181,15 @@ namespace BibleUtil.Test
         }
 
         [Fact]
+        public void ShouldHaveSameBookNumberInTwoReferencesToTheSameBook()
+        {
+            var ref1 = Reference.Parse("Proverbs 13:7");
+            var ref2 = Reference.Parse("Proverbs 13:7");
+
+            Assert.True(ref1.Book.BookNumber == ref2.Book.BookNumber);
+        }
+
+        [Fact]
         public void ShouldThrowExceptionForInvalidRange()
         {
             Assert.Throws<FormatException>(() => Reference.Parse("Gen. 3:4-5-9", new CultureInfo("en")));
