@@ -143,8 +143,8 @@ namespace BibleUtil
         /// <returns>the formatted string</returns>
         public string ToString(string format, IFormatProvider formatProvider)
         {
-            // Default to Thompsan references if none provided
-            format = format ?? "T";
+            // Default to Name if none provided
+            format = format ?? "N";
 
             switch (format)
             {
