@@ -31,7 +31,7 @@ namespace BibleUtil
 
         public Book Book { get; set; }
 
-        public int Chapter { get; set; }
+        public int? Chapter { get; set; }
 
         public int[] Verses { get; set; }
 
@@ -39,7 +39,7 @@ namespace BibleUtil
         /// If verses exist, return true if they are contiguous; false otherwise.
         /// </summary>
         /// <remarks>
-        /// Based on https://stackoverflow.com/a/2475822. "Good enough" for the task at hand.
+        /// Based on https://stackoverflow.com/a/2475822.
         /// </remarks>
         public bool ContiguousVerses()
         {
@@ -63,7 +63,7 @@ namespace BibleUtil
 
             if (compare == 0)
             {
-                compare = Chapter.CompareTo(other.Chapter);
+                compare = (Chapter ?? 0).CompareTo((other.Chapter ?? 0));
             }
 
             if (compare == 0)
@@ -308,7 +308,6 @@ namespace BibleUtil
                 if (chapter == text.Length)
                 {
                     // No chapters or verses, check if it's a book only reference.
-                    // This is a bit of a hack if I'm honest, but it works. -SWV
                     if (!Book.TryParse(text.Substring(0, chapter), culture, out Book b))
                     {
                         errorString = "There is no book, can't be a reference.";
@@ -319,7 +318,7 @@ namespace BibleUtil
                         Reference r = new Reference
                         {
                             Book = b,
-                            Chapter = 0,
+                            Chapter = null,
                             Verses = new int[0]
                         };
 

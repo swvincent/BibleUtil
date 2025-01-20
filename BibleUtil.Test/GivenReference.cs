@@ -155,7 +155,7 @@ namespace BibleUtil.Test
             var reference = Reference.Parse(text, new CultureInfo("en"));
 
             Assert.Equal("Acts", reference.Book.ToString());
-            Assert.Equal(0, reference.Chapter);
+            Assert.Null(reference.Chapter);
             Assert.Empty(reference.Verses);
             Assert.Equal("Acts", reference.ToString());
         }
