@@ -16,7 +16,7 @@ namespace BibleUtil.Test
 
             Assert.Equal("Galatians", reference.Book.ToString());
             Assert.Equal(3, reference.Chapter);
-            Assert.Equal(0, reference.Verses.Length);
+            Assert.Empty(reference.Verses);
         }
 
         [Fact]
@@ -29,7 +29,7 @@ namespace BibleUtil.Test
             Assert.Equal("2 John", reference.Book.ToString());
             Assert.Equal(1, reference.Chapter);
             Assert.Contains(10, reference.Verses);
-            Assert.Equal(1, reference.Verses.Length);
+            Assert.Single(reference.Verses);
         }
 
         [Fact]
@@ -104,7 +104,7 @@ namespace BibleUtil.Test
             Assert.Equal("1 John", reference.Book.ToString());
             Assert.Equal(1, reference.Chapter);
             Assert.Contains(9, reference.Verses);
-            Assert.Equal(1, reference.Verses.Length);
+            Assert.Single(reference.Verses);
         }
 
         [Fact]
@@ -155,17 +155,17 @@ namespace BibleUtil.Test
             var reference = Reference.Parse(text, new CultureInfo("en"));
 
             Assert.Equal("Acts", reference.Book.ToString());
-            Assert.Equal(0, reference.Chapter);
-            Assert.Equal(0, reference.Verses.Length);
+            Assert.Null(reference.Chapter);
+            Assert.Empty(reference.Verses);
             Assert.Equal("Acts", reference.ToString());
         }
 
         [Fact]
         public void ShouldScanForVersesInsideParenthesis()
         {
-            var references = Reference.Scan("This is random text with a reference (1 Co 13:3)");
+            var references = Reference.Scan("This is superfluous text with a reference (1 Co 13:3)");
 
-            Assert.Equal(1, references.Count);
+            Assert.Single(references);
             Assert.Contains(Reference.Parse("1 Cor. 13:3"), references);
         }
 

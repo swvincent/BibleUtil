@@ -13,7 +13,7 @@ namespace BibleUtil.Test
             var source = new[] { "1 John 3:2", "1 Jn 3:2" };
             var reduced = source.ReduceScriptures();
 
-            Assert.Equal(1, reduced.Count);
+            Assert.Single(reduced);
             Assert.Contains("1 John 3:2", reduced);
         }
 
@@ -34,7 +34,7 @@ namespace BibleUtil.Test
             var source = new[] {"1 Cor 13:3,6", "1 Cor 13:5", "1 Cor 13:4,8"};
             var reduced = source.ReduceScriptures();
 
-            Assert.Equal(1, reduced.Count);
+            Assert.Single(reduced);
             Assert.Contains("1 Corinthians 13:3-6,8", reduced);
         }
     }
