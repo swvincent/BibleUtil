@@ -7,18 +7,19 @@
     <Company></Company>
     <Description>A set of utilities to make it easy to find all Bible references in plain text.  The parser can recognize abbreviations and a number of common spelling mistakes, and even those can be translated.  It is designed around the Protestant canon.</Description>
     <Copyright>Copyright 2016 by DHaven.org, Copyright 2020,2025 by Scott W. Vincent</Copyright>
-    <PackageProjectUrl>https://github.com/svincent/BibleUtil</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/svincent/BibleUtil</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/swvincent/BibleUtil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/swvincent/BibleUtil</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>bible parsing</PackageTags>
+    <PackageTags>bible; bible reference; bible passage; search</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <RootNamespace>BibleUtil</RootNamespace>
     <AssemblyName>BibleUtil</AssemblyName>
     <ApplicationIcon />
     <Win32Resource />
     <PackageReleaseNotes></PackageReleaseNotes>
-    <Version>1.3.0</Version>
+    <Version>1.3.1</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -71,6 +72,10 @@
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
