@@ -5,26 +5,22 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Berin Loritsch, Scott W. Vincent</Authors>
     <Company></Company>
-    <Description>A set of utilities to make it easy to find all Bible references in plain text.  The parser can recognize abbreviations and a number of common spelling mistakes, and even those can be translated.  It is designed around the Protestant canon.</Description>
+    <Description>A utility for parsing Bible verses, which can recognize abbreviations and a number of common spelling mistakes. It is designed around the Protestant canon. Forked from DHaven.BibleUtilities.</Description>
     <Copyright>Copyright 2016 by DHaven.org, Copyright 2020,2025 by Scott W. Vincent</Copyright>
     <PackageProjectUrl>https://github.com/swvincent/BibleUtil</PackageProjectUrl>
     <RepositoryUrl>https://github.com/swvincent/BibleUtil</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>bible; bible reference; bible passage; search</PackageTags>
+    <PackageTags>bible passage reference search biblical</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <RootNamespace>BibleUtil</RootNamespace>
     <AssemblyName>BibleUtil</AssemblyName>
     <ApplicationIcon />
     <Win32Resource />
     <PackageReleaseNotes></PackageReleaseNotes>
-    <Version>1.3.1</Version>
+    <Version>1.3.2</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="system.resources.resourcemanager" Version="4.3.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Resources\Books.Designer.cs">
