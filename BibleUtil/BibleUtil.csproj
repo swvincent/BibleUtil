@@ -17,7 +17,7 @@
     <ApplicationIcon />
     <Win32Resource />
     <PackageReleaseNotes></PackageReleaseNotes>
-    <Version>1.3.2</Version>
+    <Version>1.3.3</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>

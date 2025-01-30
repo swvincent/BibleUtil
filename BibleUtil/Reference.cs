@@ -473,7 +473,7 @@ namespace BibleUtil
         {
             StringBuilder builder = new StringBuilder(Book.ToString(format, formatProvider));
 
-            if (Chapter > 0)
+            if (Chapter != null)
             {
                 builder.Append(" ");
 
